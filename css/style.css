@@ -18,7 +18,7 @@ body {
 .image-wrapper {
     display: inline;
     font-size: 0;
-    max-width: 400px;
+    max-width: 33%;
 }
 
 .slideshow-wrapper {
