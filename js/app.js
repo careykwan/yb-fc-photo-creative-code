@@ -1,5 +1,7 @@
 $(document).ready(function() {
-      $('#slideshow').slick({});
+      $('#slideshow').slick({
+            lazyLoad: 'progressive'
+      });
 
       $(".image-wrapper").click(function() {
             $("#slideshowWrapper").fadeIn(500);
