@@ -12,8 +12,6 @@ body {
 .image-collection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
     max-width: 1200px;
     width: 100%;
     position: fixed;
@@ -28,6 +26,10 @@ body {
     font-size: 0;
 }
 
+.image-wrapper img {
+    padding: 10px;
+}
+
 .slideshow-wrapper {
     background: rgba(0, 0, 0, 0.6);
     position: fixed;
@@ -35,6 +37,15 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    display: none;
+}
+
+.close-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
 }
 
 .slideshow {
