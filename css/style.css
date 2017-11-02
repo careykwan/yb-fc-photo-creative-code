@@ -39,6 +39,7 @@ body {
 
 .slideshow {
     position: fixed;
+    max-width: 1200px;
     width: 80%;
     height: 80%;
     top: 50%;
