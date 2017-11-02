@@ -1,13 +1,26 @@
 $(document).ready(function() {
-      $('#slideshow').slick({
-            lazyLoad: 'progressive'
-      });
+      $('#slideshow').slick();
 
       $(".image-wrapper").click(function() {
-            $("#slideshowWrapper").fadeIn(500);
+            $("#slideshow").slick("unslick");
+
+            $("#slideshowWrapper").css("display", "block");
+
+            $('#slideshow').slick();
+
+            $("#slideshowWrapper").animate({
+                  "opacity": "1"
+            }, 500);
+
       });
 
       $("#closeIcon").click(function() {
-            $("#slideshowWrapper").fadeOut(500);
+            $("#slideshowWrapper").css({
+                  "opacity": "0"
+            }, 500);
+
+            setTimeout(function() {
+                  $("#slideshowWrapper").hide()
+            }, 500);
       });
 });
