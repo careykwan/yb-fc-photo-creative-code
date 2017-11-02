@@ -2,6 +2,8 @@ $(document).ready(function() {
       $('#slideshow').slick();
 
       $(".image-wrapper").click(function() {
+            $("#slideshowWrapper").css("opacity", "0");
+
             $("#slideshow").slick("unslick");
 
             $("#slideshowWrapper").css("display", "block");
@@ -15,12 +17,6 @@ $(document).ready(function() {
       });
 
       $("#closeIcon").click(function() {
-            $("#slideshowWrapper").css({
-                  "opacity": "0"
-            }, 500);
-
-            setTimeout(function() {
-                  $("#slideshowWrapper").hide()
-            }, 500);
+            $("#slideshowWrapper").fadeOut(500);
       });
 });
