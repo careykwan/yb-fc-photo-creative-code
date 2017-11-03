@@ -22,6 +22,9 @@ body {
     display: inline-block;
     font-size: 0;
     max-width: 36%;
+    margin: 4px 2px;
+    border: 5px solid white;
+
 }
 
 .slideshow-wrapper {
@@ -62,7 +65,7 @@ body {
 @media only screen and (max-width: 1150px) {
     
     .image-wrapper {
-        
+
         display: inline-block;
         font-size: 0;
         max-width: 36%;
