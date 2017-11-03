@@ -24,7 +24,10 @@ body {
     max-width: 36%;
     margin: 4px 2px;
     border: 5px solid white;
+}
 
+.image-wrapper:hover {
+    cursor: pointer;
 }
 
 .slideshow-wrapper {
