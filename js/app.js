@@ -30,7 +30,7 @@ $(document).ready(function() {
             }, 500);
 
             $(".image-collection").css({
-                  "filter": "blur(10px)"
+                  "filter": "blur(15px)"
             }, 500);
 
       });
