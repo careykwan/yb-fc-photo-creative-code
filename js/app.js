@@ -29,9 +29,16 @@ $(document).ready(function() {
                   "opacity": "1"
             }, 500);
 
+            $(".image-collection").css({
+                  "filter": "blur(10px)"
+            }, 500);
+
       });
 
       $("#closeIcon").click(function() {
             $("#slideshowWrapper").fadeOut(500);
+            $(".image-collection").css({
+                  "filter": "blur(0px)"
+            }, 500);
       });
 });
