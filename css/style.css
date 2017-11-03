@@ -32,7 +32,7 @@ body {
 }
 
 .slideshow-wrapper {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
     left: 0;
@@ -64,6 +64,11 @@ body {
     transform: translateX(-50%) translateY(-50%);
     z-index: 200;
     vertical-align: middle;
+    padding: 0 3px;
+}
+
+.slideshow img {
+    border: 5px solid white;
 }
 
 @media only screen and (max-width: 1150px) {
